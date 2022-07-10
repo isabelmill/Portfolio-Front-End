@@ -8,7 +8,7 @@
     width: 100%;
     color: rgb(39, 39, 39);
     // background-color: #E1E9F2;
-    background-image:url('./../../imgs/backgr.png');
+    background-image: url('./../../imgs/backgr.png');
     background-size: cover;
     // color: #2F3D7E;
 
@@ -30,7 +30,8 @@
 
             h1 {
                 font-size: rem(60px);
-                span{
+
+                span {
                     color: #F0AEC8;
                     margin-left: 10px;
                 }
@@ -44,6 +45,8 @@
             h5 {
                 font-size: rem(20px);
                 max-width: rem(700px);
+                line-height: 28px;
+
             }
         }
 
@@ -74,9 +77,4 @@
         }
     }
 
-    .right-container {
-        // background-color: rgb(165, 165, 216);
-        // border-radius: 50%;
-        // padding: 40px;
-    }
 }
