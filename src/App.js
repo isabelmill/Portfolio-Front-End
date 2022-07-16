@@ -6,6 +6,7 @@ import AnimatedRoutes from './cmps/AnimatedRoutes.jsx';
 import { loadPortfolio } from './store/actions/portfolioActions'
 import { useDispatch } from 'react-redux'
 
+
 function App() {
 
   useEffect(() => {

@@ -76,10 +76,20 @@
 
 @media screen and (max-width: 650px) {
     .home-main {
+
+        .social-links {
+
+            .fa {
+
+                // color: white !important;
+                // background-color: #F0AEC8 !important; 
+            }
+        }
+
         .header {
 
             h1 {
-                font-size: 3.3rem !important;
+                font-size: 3rem !important;
             }
 
             h5 {

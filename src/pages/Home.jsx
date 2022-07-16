@@ -20,14 +20,15 @@ export const Home = () => {
                     </h1>
                     <h5>{portfolio.homePage}</h5>
                 </div>
+                
                 <div className="social-links">
                     <a target="_blank" href="https://www.linkedin.com/in/isabel-mill-bb5a05177"
                         className="social-icon"> <i className="fa fa-linkedin"></i></a>
                     <a target="_blank" href="https://github.com/isabelmill" className="social-icon"> <i
                         className="fa fa-github"></i></a>
-                    <a target="_blank" href="https://github.com/isabelmill" className="social-icon"> <i
+                    <a target="_blank" href="https://www.facebook.com/profile.php?id=100010707871314" className="social-icon"> <i
                         className="fa fa-facebook"></i></a>
-                    <a target="_blank" href="https://github.com/isabelmill" className="social-icon"> <i
+                    <a target="_blank" href="https://www.instagram.com/isabel_777/" className="social-icon"> <i
                         className="fa fa-instagram"></i></a>
                 </div>
             </div>
