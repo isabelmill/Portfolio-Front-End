@@ -49,7 +49,7 @@
 
             input,
             textarea {
-                width: 500px;
+                width: 100%;
                 padding: 10px;
                 margin-bottom: 8px;
                 background-color: #F0F0F0;
@@ -116,5 +116,18 @@
             }
         }
     }
+
+}
+
+
+/////////// MQ ///////////
+
+@media screen and (max-width: 750px) {
+.contact-main{
+    padding: 20px 0;
+    .contact-form{
+        margin: 0 10px ;
+    }
+}
 
 }

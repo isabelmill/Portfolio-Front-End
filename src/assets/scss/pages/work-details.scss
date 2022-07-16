@@ -38,7 +38,6 @@
             flex-direction: column;
             gap: 40px;
 
-            // background-color: aqua;
             .img {
                 display: flex;
                 align-items: center;
@@ -46,8 +45,6 @@
                 max-width: 600px;
                 max-height: 550px;
                 border-radius: 1px;
-                // background-color: rgb(255, 255, 255);
-                // background-color: #f7c1d6;
                 box-shadow: 0px 4px 8px 0px rgb(0 0 0 / 20%);
                 padding: 10px 30px;
                 position: relative;
@@ -167,9 +164,7 @@
                 display: flex;
                 gap: 10px;
                 flex-wrap: wrap;
-                // border: 2px solid #F0AEC8;
                 border-radius: 5px;
-                // padding: 10px 20px;
                 width: fit-content;
 
 
@@ -183,16 +178,39 @@
                     cursor: default;
                     transition: 0.3s;
 
-                    // background-color: #F0AEC8;
-                    // color: #F0AEC8;
 
                     &:hover {
                         box-shadow: 0px 4px 8px 0px rgb(0 0 0 / 20%);
                         background-color: #F0AEC8;
-                        // color: white;
                     }
                 }
             }
         }
     }
+}
+
+/////////// MQ ///////////
+
+@media screen and (max-width: 850px) {
+    .work-details {
+        .work{
+            flex-direction: column-reverse;
+            padding: 30px;
+            .back-btn{
+                right: 20px;
+                top: 30px;
+            }
+            .project-image{
+                .img{
+                    height: 300px;
+                }
+            }
+            .project-info{
+                h1{
+                    font-size: 45px;
+                }
+            }
+        }
+    }
+
 }

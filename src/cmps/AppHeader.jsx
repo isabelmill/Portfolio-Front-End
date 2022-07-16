@@ -23,17 +23,16 @@ export function AppHeader() {
                     <p>Contact</p>
                 </NavLink>
             </div>
+
             <div className="empty-div">
-                <NavLink className="link" to='/back-office'>
+                {/* <NavLink className="link" to='/back-office'>
                     <p>Back</p>
-                </NavLink>
+                </NavLink> */}
+                {/* <NavLink className="contact" to='/contact'>
+                    <p>Let's Talk</p>
+                </NavLink> */}
             </div>
             <div className="back-div"></div>
-            {/* <div className="contact">
-                <NavLink className="link" to='/contact'>
-                    <p>Contact</p>
-                </NavLink>
-            </div> */}
         </section>
     )
 }

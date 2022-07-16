@@ -1,5 +1,4 @@
 .home-main {
-    // padding: 30px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -7,25 +6,21 @@
     height: calc(100vh - em(70px));
     width: 100%;
     color: rgb(39, 39, 39);
-    // background-color: #E1E9F2;
     background-image: url('./../../imgs/backgr.png');
     background-size: cover;
-    // color: #2F3D7E;
+
 
 
     .left-container {
         display: flex;
         flex-direction: column;
-        // justify-content: center;
-        // align-items: center;
         gap: em(50px);
-        // background-color: aliceblue;
+        padding: 0 20px;
+
 
         .header {
             display: flex;
             flex-direction: column;
-            // justify-content: center;
-            // align-items: flex-start;
             gap: em(20px);
 
             h1 {
@@ -53,8 +48,7 @@
         .social-links {
             display: flex;
             gap: em(8px);
-            // align-items: flex-start;
-            // justify-content: flex-start;
+            width: fit-content;
 
             .fa {
                 display: flex;
@@ -65,8 +59,6 @@
                 height: rem(40px);
                 transition: .5s;
                 border-radius: 50%;
-                // border: 2px solid #F0AEC8;
-                // background-color: rgb(165, 165, 216);
 
                 &:hover {
                     color: white;
@@ -74,6 +66,30 @@
 
                 }
             }
+        }
+    }
+
+}
+
+
+/////////// MQ ///////////
+
+@media screen and (max-width: 650px) {
+    .home-main {
+        .header {
+
+            h1 {
+                font-size: 3.3rem !important;
+            }
+
+            h5 {
+                font-size: 1rem !important;
+            }
+        }
+
+        .left-container {
+            width: 100%;
+
         }
     }
 

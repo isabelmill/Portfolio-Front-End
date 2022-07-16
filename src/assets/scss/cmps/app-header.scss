@@ -8,9 +8,6 @@
     box-shadow:
         0px 0px 29px -8px rgba(0, 0, 0, 0.22);
 
-    // margin-bottom: 20px;
-    // background-color: #BBF2DC;
-    // color: white;
     .back-div {
         position: absolute;
         width: 110px;
@@ -72,8 +69,19 @@
     }
 }
 
-a.active,
-a.my-active {
-    // color: #FAEAEB;
-    // border-bottom: solid 3px #019fb6;
+// a.active,
+// a.my-active {
+
+// }
+
+
+/////////// MQ ///////////
+
+@media screen and (max-width: 650px) {
+    .app-header-main {
+
+        .links {
+            display: none;
+        }
+    }
 }

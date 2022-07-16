@@ -1,14 +1,17 @@
 import { motion } from 'framer-motion'
 import { NavLink } from "react-router-dom";
-import { portfolio } from '../services/portfolio'
+import { useSelector } from 'react-redux'
+import { Loading } from '../cmps/Loading'
 
 export function About() {
 
-    // const skills = ['HTML', 'Javascript', 'CSS', 'Sass', 'React.js', 'VUE', 'Angular', 'Node.js', 'MongoDB', 'Git', 'Docker'];
-    const listSkills = portfolio.skills.map((skill) =>
+    const { portfolio } = useSelector(state => state.portfolioModule)
+
+    const listSkills = portfolio?.skills.map((skill) =>
         <div className='skill' key={skill}>{skill}</div>
     );
 
+    if (!portfolio) return <Loading/>
     return (
         <motion.section className="about-main" initial={{ x: window.innerWidth }}
             animate={{ x: 0 }}
@@ -18,8 +21,8 @@ export function About() {
                     <p>Let me introduce myself</p>
                     <h1>About</h1>
                     <div className="block"></div>
-                    <p>I am a Full-Stack Developer based in Israel. I have knowledge and experience in writing single-page applications working with the latest WEB technologies (Vue.js, Vuex, Node.js, React.js, Angular, etc.). Passionate about creating an interactive, and useful user experience.</p>
-                    <p>Well organized person, problem solver with high attention to detail that constantly explores new ideas and technologies.</p>
+                    <p>{portfolio.about.main}</p>
+                    <p>{portfolio.about.abilities}</p>
                     <a href={require('../assets/resume.pdf')} download className='resume'>Download Resume</a>
                 </div>
                 <div className="skills-info">
