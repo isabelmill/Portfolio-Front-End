@@ -13,10 +13,8 @@ let portfolio = {
     skills: ['HTML', 'Javascript', 'CSS', 'Sass', 'React', 'VUE', 'Angular', 'Node.js', 'MongoDB', 'Git', 'Type-Script', 'Docker'],
     homePage: 'My name is Isabel Mill, and I am a passionate Full-Stack developer with an eye for design and a strong desire to learn and create.',
     resume: '',
-    about: {
-        main: 'I am a Full-Stack Developer based in Israel. I have knowledge and experience in writing single-page applications working with the latest WEB technologies (Vue.js, Vuex, Node.js, React.js, Angular, etc.). Passionate about creating an interactive, and useful user experience.',
-        abilities: 'Well organized person, problem solver with high attention to detail that constantly explores new ideas and technologies.',
-    },
+    main: 'I am a Full-Stack Developer based in Israel. I have knowledge and experience in writing single-page applications working with the latest WEB technologies (Vue.js, Vuex, Node.js, React.js, Angular, etc.). Passionate about creating an interactive, and useful user experience.',
+    abilities: 'Well organized person, problem solver with high attention to detail that constantly explores new ideas and technologies.',
     projects: [{
         _id: 'p101',
         name: 'Tasko',

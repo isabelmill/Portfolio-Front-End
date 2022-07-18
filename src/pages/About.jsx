@@ -21,8 +21,8 @@ export function About() {
                     <p>Let me introduce myself</p>
                     <h1>About</h1>
                     <div className="block"></div>
-                    <p>{portfolio.about.main}</p>
-                    <p>{portfolio.about.abilities}</p>
+                    <p>{portfolio.main}</p>
+                    <p>{portfolio.abilities}</p>
                     <a href={require('../assets/resume.pdf')} download className='resume'>Download Resume</a>
                 </div>
                 <div className="skills-info">

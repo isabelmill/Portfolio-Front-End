@@ -97,11 +97,11 @@ export function BackOffice() {
                         <h2>About Page</h2>
                         <div className="textarea">
                             <p>Main Text</p>
-                            <textarea name='main' onChange={handleChange} type="text" value={newPort.about.main} />
+                            <textarea name='main' onChange={handleChange} type="text" value={newPort.main} />
                         </div>
                         <div className="textarea">
                             <p>Abilities Text</p>
-                            <textarea name='abilities' onChange={handleChange} type="text" value={newPort.about.abilities} />
+                            <textarea name='abilities' onChange={handleChange} type="text" value={newPort.abilities} />
                         </div>
                         <button>Submit</button>
                     </form>
