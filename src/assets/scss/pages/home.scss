@@ -14,7 +14,7 @@
     .left-container {
         display: flex;
         flex-direction: column;
-        gap: em(50px);
+        gap: em(10px);
         padding: 0 20px;
 
 
@@ -25,6 +25,7 @@
 
             h1 {
                 font-size: rem(60px);
+                margin-bottom: em(3px);
 
                 span {
                     color: #F0AEC8;
@@ -38,7 +39,7 @@
             }
 
             h5 {
-                font-size: rem(20px);
+                font-size: rem(25px);
                 max-width: rem(700px);
                 line-height: 28px;
 
@@ -47,8 +48,10 @@
 
         .social-links {
             display: flex;
+            justify-content: flex-end;
             gap: em(8px);
             width: fit-content;
+            width: 100%;
 
             .fa {
                 display: flex;
@@ -76,27 +79,6 @@
 
 @media screen and (max-width: 650px) {
     .home-main {
-
-        .social-links {
-
-            .fa {
-
-                // color: white !important;
-                // background-color: #F0AEC8 !important; 
-            }
-        }
-
-        .header {
-
-            h1 {
-                font-size: 3rem !important;
-            }
-
-            h5 {
-                font-size: 1rem !important;
-            }
-        }
-
         .left-container {
             width: 100%;
 

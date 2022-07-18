@@ -123,11 +123,20 @@
 /////////// MQ ///////////
 
 @media screen and (max-width: 750px) {
-.contact-main{
-    padding: 20px 0;
-    .contact-form{
-        margin: 0 10px ;
+    .contact-main {
+        padding: 20px 0;
+
+        .contact-form {
+            margin: 0 10px;
+
+            .submit-btn {
+                background-color: #F0AEC8;
+
+                a {
+                    color: white !important;
+                }
+            }
+        }
     }
-}
 
 }

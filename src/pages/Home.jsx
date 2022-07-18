@@ -14,10 +14,11 @@ export const Home = () => {
             exit={{ x: -window.innerWidth, transition: { duration: 0.2 } }}>
             <div className="left-container">
                 <div className="header">
-                    <h2>Hello I'm A</h2>
-                    <h1>Full-Stack
+                    {/* <h2>Hello, I'm Isabel Mill</h2>
+                    <h1>A Full-Stack
                         <span>Developer</span>
-                    </h1>
+                    </h1> */}
+                    <h1>Hello, I'm Isabel</h1>
                     <h5>{portfolio.homePage}</h5>
                 </div>
                 
@@ -26,10 +27,10 @@ export const Home = () => {
                         className="social-icon"> <i className="fa fa-linkedin"></i></a>
                     <a target="_blank" href="https://github.com/isabelmill" className="social-icon"> <i
                         className="fa fa-github"></i></a>
-                    <a target="_blank" href="https://www.facebook.com/profile.php?id=100010707871314" className="social-icon"> <i
+                    {/* <a target="_blank" href="https://www.facebook.com/profile.php?id=100010707871314" className="social-icon"> <i
                         className="fa fa-facebook"></i></a>
                     <a target="_blank" href="https://www.instagram.com/isabel_777/" className="social-icon"> <i
-                        className="fa fa-instagram"></i></a>
+                        className="fa fa-instagram"></i></a> */}
                 </div>
             </div>
         </motion.section>

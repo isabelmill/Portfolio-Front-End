@@ -4,6 +4,7 @@ import { motion } from 'framer-motion'
 import { NavLink } from "react-router-dom";
 import { useSelector } from 'react-redux'
 import { Loading } from '../cmps/Loading'
+// import { Loading } from '../assets/imgs/computer.jpg'
 
 export const WorkDetails = () => {
     const { portfolio } = useSelector(state => state.portfolioModule)
@@ -16,7 +17,7 @@ export const WorkDetails = () => {
     }, [params._id, portfolio])
 
     useEffect(() => {
-        setImage(work?.images[0])
+        setImage(work?.images[1])
     }, [work])
 
 
@@ -46,7 +47,7 @@ export const WorkDetails = () => {
     }
 
 
-    if (!work) return <Loading/>
+    if (!work) return <Loading />
     return (
         <motion.section initial={{ x: window.innerWidth }}
             animate={{ x: 0 }}
@@ -58,12 +59,15 @@ export const WorkDetails = () => {
                 <div className="project-image">
                     <div className="img">
                         <img src={currImage} alt="" />
-                        <div onClick={nextImage} className="next">
+                        {/* <img src={require('../assets/imgs/deskImg.png')} alt="" /> */}
+                        {/* <img src={require('../assets/imgs/computer1.jpg')} alt="" /> */}
+                        {/* <img className='img-inside-desk' src={work.images[0]} alt="" /> */}
+                        {/* <div onClick={nextImage} className="next">
                             <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20"><path d="m6 18-1.417-1.417L11.167 10 4.583 3.417 6 2l8 8Z" /></svg>
                         </div>
                         <div onClick={prevImage} className="back">
                             <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20"><path d="m8 18-8-8 8-8 1.417 1.417L2.833 10l6.584 6.583Z" /></svg>
-                        </div>
+                        </div> */}
                     </div>
                     <div className="btns">
                         <a target="_blank" href={work.website}><button>
