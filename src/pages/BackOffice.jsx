@@ -4,24 +4,32 @@ import { useEffect, useState, useRef } from 'react'
 import { ProjectModal } from '../cmps/ProjectModal'
 import { useSelector, useDispatch } from 'react-redux'
 import { useForm } from '../hooks/useForm.jsx'
-import { updatePortfolio } from '../store/actions/portfolioActions'
+import { updatePortfolio, setIsCorrectPassword } from '../store/actions/portfolioActions'
 import { Loading } from '../cmps/Loading'
+import { useNavigate } from "react-router-dom";
 
 export function BackOffice() {
 
-    const { portfolio } = useSelector(state => state.portfolioModule)
+    const { portfolio, isCorrectPassword } = useSelector(state => state.portfolioModule)
     const [isOpen, setModal] = useState(false)
     const [currProj, setProj] = useState(null)
     const [newPort, handleChange, setNewPort] = useForm(null)
     const skillInput = useRef()
     const dispatch = useDispatch()
+    const navigate = useNavigate();
 
 
     useEffect(() => {
+        if (!isCorrectPassword) {
+            navigate("/password");
+        }
         if (portfolio) {
             makePortfolio()
         }
         // eslint-disable-next-line
+        return () => {
+            dispatch(setIsCorrectPassword(false))
+        };
     }, [portfolio])
 
     const makePortfolio = () => {
@@ -77,7 +85,7 @@ export function BackOffice() {
         </div>
     );
 
-    if (!portfolio || !newPort) return <Loading/>
+    if (!portfolio || !newPort) return <Loading />
     return (
         <motion.section className="back-office-main" initial={{ x: window.innerWidth }}
             animate={{ x: 0 }}

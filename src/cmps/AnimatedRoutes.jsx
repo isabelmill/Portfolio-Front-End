@@ -7,6 +7,7 @@ import { About } from '../pages/About.jsx';
 import { AnimatePresence } from 'framer-motion';
 import { Contact } from '../pages/Contact.jsx';
 import { WorkDetails } from '../pages/WorkDetails.jsx';
+import { PasswordModal } from '../cmps/PasswordModal.jsx'
 
 function AnimatedRoutes() {
     const location = useLocation()
@@ -18,6 +19,7 @@ function AnimatedRoutes() {
                 <Route path='/work' element={<Work />} />
                 <Route path='/work/:_id' element={<WorkDetails />} />
                 <Route path='/contact' element={<Contact />} />
+                <Route path='/password' element={<PasswordModal />} />
                 <Route path='/back-office' element={<BackOffice />} />
             </Routes>
         </AnimatePresence>

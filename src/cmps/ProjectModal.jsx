@@ -38,6 +38,7 @@ export function ProjectModal(props) {
     }
     const addSkill = (ev) => {
         ev.preventDefault();
+        if (!skillInput.current.value) return
         project.techStack.push(skillInput.current.value)
         setNewProject({ ...project })
         skillInput.current.value = ''
@@ -98,7 +99,7 @@ export function ProjectModal(props) {
 
     }
 
-    if (!newProject) return <Loading/>
+    if (!newProject) return <Loading />
 
     return (
         <section className="project-modal">

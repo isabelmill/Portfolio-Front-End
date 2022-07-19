@@ -25,8 +25,8 @@ export function updatePortfolio(updatedPortfolio) {
     }
 }
 
-export function setFilterBy(filterBy) {
+export function setIsCorrectPassword(isCorrect) {
     return async (dispatch) => {
-        dispatch({ type: 'SET_FILTER_BY', filterBy })
+        dispatch({ type: 'SET_IS_CORRECT_PASSWORD', isCorrect })
     }
 }

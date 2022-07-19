@@ -1,6 +1,6 @@
 const INITIAL_STATE = {
     portfolio: null,
-    filterBy: []
+    isCorrectPassword: false
 }
 
 
@@ -16,10 +16,10 @@ export function portfolioReducer(state = INITIAL_STATE, action) {
                 ...state,
                 portfolio: { ...action.portfolio }
             }
-        case 'SET_FILTER_BY':
+        case 'SET_IS_CORRECT_PASSWORD':
             return {
                 ...state,
-                filterBy: [ ...action.filterBy ]
+                isCorrectPassword: action.isCorrect
             }
         default:
             return state;
